@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: auto;
     font-family: Arial, Helvetica, sans-serif ;
@@ -16,10 +20,13 @@ h2, p {
    color: #E5E5E5;
 }
 
+.italic {
+    font-style: italic;
+}
+
 .flex-row {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
 }
 
 .flex-column {
@@ -80,11 +87,51 @@ h2, p {
 .menu_item {
     display: flex;
     flex-direction: column;
+
+}
+
+/*---form---*/
+
+.form {
+    align-items: center;
+    justify-content: space-around;
+    border-top: 1px dashed #E5E5E5;
+    border-bottom: 1px dashed #E5E5E5;
+    padding: 9px;
+}
+
+.form >*{
+    margin-left: 9px;
+    margin-right: 9px;
+}
+
+.form__text{
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+}
+
+.form__input-text {
+    width: 160px;
+    height: 22px;
+    border: 1px solid #E5E5E5;
+}
+
+.form__button {
+    width: 80px;
+    height: 23px;
+    background: linear-gradient(180deg, #F4F3F3 0%, #BBB9B9 100%);
+    border: 1px solid #E5E5E5;
+    border-radius: 2px;
+    text-align: center;
+    font-size: 10px;
+    line-height: 10px;
 }
 
 /*---card---*/
 
 .card-box {
+    flex-wrap: wrap;
     padding-bottom: 7px;
     justify-content: space-between;
 }
