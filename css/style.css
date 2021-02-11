@@ -8,6 +8,10 @@ body {
     max-width: 1100px;
 }
 
+button {
+    cursor: pointer;
+}
+
 a, ul {
     text-decoration: none;
     color: #34ACA7;
@@ -41,66 +45,79 @@ h2, p, ul, li {
 }
 
 .wrapper {
-    margin: auto;
+    margin-top: 46px;
     max-width: 1100px;
 
-    display: flex;
-    flex-direction: column;
-}
-/*
-.aside__icon {
-    position: relative;
 }
 
-.aside__icon::before {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    left: 7px;
-  /*  background: url(../icon/food-icon.svg) no-repeat center center / cover;*/
-/*}
-
-.aside__icon_food::before {
-    background-image: url(../icon/food-icon.svg);
+.first:first-child {
+    margin-right: 44px;
 }
 
-*/
+/*----header---*/
 
-.wrapper__content, .aside__item, .menu, .form {
-    display: flex;
-    flex-direction: row;
+.header {
+    width: 140px;
 }
 
-.aside, .card {
-    display: flex;
-    flex-direction: column;
+.menu__item {
+    align-items: center;
+    margin-bottom: 36px;
 }
 
-.main {
-    display: flex;
-    flex-direction: column;
+.menu__title {
+    padding-left: 15px;
+    font-size: 14px;
+    line-height: 14px;
 }
 
+/*---TWEET---*/
 
-
-.menu {
-    display: flex;
-    flex-direction: row;
+.tweet__title {
+    padding: 5px 0;
+    font-family: Verdana;
+    font-size: 12px;
+    line-height: 12px;
+    border-bottom: 1px dashed #E5E5E5;
 }
 
-.menu_item {
-    display: flex;
-    flex-direction: column;
-
+.tweet__text {
+    padding: 10px 0;
+    font-size: 10px;
+    line-height: 19px;
 }
 
-/*----aside---*/
+.tweet__button {
+    align-items: center;
+    margin: 9px 0 5px 0;
+    padding: 0;
+    border: 1px solid #E5E5E5;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background: #FFFFFF;
+}
+
+.tweet__icon {
+    margin: 8px 5px;
+    width: 16px;
+    height: 13px;
+    background: no-repeat center center;
+    background-image: url(../icon/tweetter-smal-icon.svg);
+}
+
+.tweet__button-text {
+    font-size: 9px;
+    line-height: 12px;
+    color: #34ACA7;
+}
 
 
 
 /*---baner---*/
+
+.baner {
+    position: relative;
+}
 
 .baner__img {
     height: 100%;
@@ -197,6 +214,7 @@ h2, p, ul, li {
     text-align: center;
     font-size: 10px;
     line-height: 10px;
+    cursor: pointer;
 }
 
 /*---card---*/

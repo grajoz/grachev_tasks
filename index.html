@@ -7,40 +7,77 @@
         <title>Food sense</title>
     </head>
     <body>
-        <div class="wrapper">
-            <div class="wrapper__content">
-                <aside class="aside">
+        <div class="wrapper flex-column">
+            <div class="wrapper__content flex-row">
+                <header class="header flex-column first">
                     <div class="logo">
                         <a href="#">
                             <img src="icon/icon-logo.svg" alt="logo">
                         </a>
                     </div>
 
-                    <ul class="menu">
-                        <li class="menu__item flex-row">
-                            <img src="icon/food-icon.svg" alt="food">
-                            <div>Tastemakers</div>
+                    <ul class="menu flex-column">
+                        <li>
+                            <a class="menu__item flex-row" href="#">                            
+                                <img src="icon/food-icon.svg" alt="food">
+                                <div class="menu__title">Tastemakers</div>
+                            </a>
                         </li>
-                        <li class="menu__item flex-row">
-                            <img src="icon/blog-icon.svg" alt="blog">
-                            <div>Blog</div>
+                        <li>
+                            <a class="menu__item flex-row" href="#">
+                                <img src="icon/blog-icon.svg" alt="blog">
+                                <div class="menu__title">Blog</div>
+                            </a>
                         </li>
-                        <li class="menu__item flex-row">
-                            <img src="icon/a-list-icon.svg" alt="a-list">
-                            <div>The A-List</div>
+                        <li>
+                            <a class="menu__item flex-row" href="#">
+                                <img src="icon/a-list-icon.svg" alt="a-list">
+                                <div class="menu__title">The A-List</div>
+                            </a>
                         </li>
-                        <li class="menu__item flex-row">
-                            <img src="icon/camera-icon.svg" alt="camera">
-                            <div>Contribute</div>
+                        <li>
+                            <a class="menu__item flex-row" href="#">
+                                <img src="icon/camera-icon.svg" alt="camera">
+                                <div class="menu__title">Contribute</div>
+                            </a>
                         </li>
-                        <li class="menu__item flex-row">
-                            <img src="icon/about-icon.svg" alt="about">
-                            <div>About</div>
+                        <li>
+                            <a class="menu__item flex-row" href="#">
+                                <img src="icon/about-icon.svg" alt="about">
+                                <div class="menu__title">About</div>
+                            </a>
                         </li>
                     </ul>
 
-                </aside>
-                <section class="main">
+                    <div class="tweet">
+                        <div class="tweet__elem flex-column">
+                            <div class="tweet__title">
+                                <span class="uppercase">Latest tweet</span>
+                            </div>
+                            <button class="tweet__button flex-row">
+                                <div class="tweet__icon"></div><div class="tweet__button-text italic">
+                                    Join the Conversation
+                                </div>
+                            </button>
+                        </div>
+
+                        <div class="tweet__elem flex-column">
+                            <div class="tweet__title">
+                                <span class="uppercase">Let’s be friends!</span>
+                            </div>
+                            <div class="tweet__text italic">
+                                For weekly finds, community recommendations, and more, like us on Facebook.
+                            </div>
+                            <button class="tweet__button flex-row">
+                                <div class="tweet__icon"></div><div class="tweet__button-text italic">
+                                    Join the Community
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+
+                </header>
+                <section class="main flex-column first">
                     <div class="baner">
                         <img class="baner__img" src="img/baner.png" alt="baner">
                         <div class="baner__title">Share your Foor Sence</div>
@@ -73,7 +110,7 @@
                     </div>
 
                     <form class="form flex-row">
-                        <img src="icon/mail-icon.svg" alt="mail">
+                            <img src="icon/mail-icon.svg" alt="mail">
                         <p class="form__text italic">Sign up for out newsletter to receive a handpicked selection of the best 
                             stories, recipes, and news, delivered weekly to your inbox.</p>
                         <input class="form__input-text" type=”text” name=”e_mail”>
@@ -83,7 +120,7 @@
                     <div class="card-box flex-row">
                         <div class="card">
                             <div class="card__img-wrap">
-                                <img class="card__img" src="img/sips.png" alt="sips">
+                                <a href="#"><img class="card__img" src="img/sips.png" alt="sips"></a>
                             </div>
                             <h2 class="card__caption">
                                 <a href="#">2012’s Best Summer Cookbooks</a>
@@ -101,7 +138,7 @@
 
                         <div class="card">
                             <div class="card__img-wrap">
-                                <img class="card__img" src="img/salad.png" alt="salad">
+                                <a href="#"><img class="card__img" src="img/salad.png" alt="salad"></a>
                             </div>
                             <h2 class="card__caption">
                                 <a href="#">How to Make Vegetable Chips</a>
@@ -119,7 +156,7 @@
 
                         <div class="card">
                             <div class="card__img-wrap">
-                                <img class="card__img" src="img/parsley.png" alt="parsley">
+                                <a href="#"><img class="card__img" src="img/parsley.png" alt="parsley"></a>
                             </div>
                             <h2 class="card__caption">
                                 <a href="#">Join us on Pinterest!</a>
@@ -135,7 +172,7 @@
 
                         <div class="card">
                             <div class="card__img-wrap">
-                                <img class="card__img" src="img/plant.png" alt="plant">
+                                <a href="#"><img class="card__img" src="img/plant.png" alt="plant"></a>
                             </div>
                             <h2 class="card__caption">
                                 <a href="#">Recipes from a Sunday Supper</a>
