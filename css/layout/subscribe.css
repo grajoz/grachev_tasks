@@ -1,0 +1,36 @@
+.subscribe {
+    padding: 9px;    
+    align-items: center;
+    justify-content: space-around;
+    border-top: 1px dashed #E5E5E5;
+    border-bottom: 1px dashed #E5E5E5;
+}
+
+.subscribe >*{
+    margin-left: 9px;
+    margin-right: 9px;
+}
+
+.subscribe__text{
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+}
+
+.subscribe__input-text {
+    width: 160px;
+    height: 22px;
+    border: 1px solid #E5E5E5;
+}
+
+.subscribe__button {
+    width: 80px;
+    height: 23px;
+    background: linear-gradient(180deg, #F4F3F3 0%, #BBB9B9 100%);
+    border: 1px solid #E5E5E5;
+    border-radius: 2px;
+    text-align: center;
+    font-size: 10px;
+    line-height: 10px;
+    cursor: pointer;
+}

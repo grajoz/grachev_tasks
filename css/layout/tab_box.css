@@ -1,0 +1,28 @@
+.tab-box {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.tab {
+    justify-content: center;
+    width: 25%;
+    height: 85px;
+    padding: 0 20px;
+    background: #EFF8F7;
+}
+
+.tab:hover {
+    background: #D9EFEC;
+}
+
+.tab__title {
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.tab__text {
+    font-size: 10px;
+    line-height: 19px;
+    font-style: italic;
+}

@@ -1,0 +1,31 @@
+.baner {
+    position: relative;
+}
+
+.baner__img {
+    height: 100%;
+    width: 100%;
+}
+
+.baner__title, .baner__text {
+    position: absolute;
+    font-style: italic;
+}
+
+.baner__title {
+    top: 285px;
+    background: #FFFFFF;
+    color: #000000;
+    font-size: 22px;
+    line-height: 22px;
+    padding: 14px 28px;
+}
+
+.baner__text {
+    top: 334px;
+    background: #000000;
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 14px;
+    padding: 14px 28px;
+}

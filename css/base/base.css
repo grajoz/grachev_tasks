@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif ;
+    max-width: 1100px;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: #34ACA7;
+}
+
+li {
+    list-style-type: none;
+}
+
+h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+.smokie {
+   color: #E5E5E5;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}

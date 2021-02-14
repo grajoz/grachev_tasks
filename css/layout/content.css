@@ -1,0 +1,13 @@
+.wrapper {
+    margin-top: 46px;
+    max-width: 1100px;
+
+}
+
+.content-margin:first-child {
+    margin-right: 44px;
+}
+
+.content__aside {
+    width: 140px;
+}

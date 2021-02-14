@@ -1,0 +1,51 @@
+.footer {
+    font-size: 12px;
+    letter-spacing: -0.02em;
+    line-height: 12px;
+
+
+    justify-content: space-between;
+    border-top: 2px solid #E5E5E5;
+    padding: 26px 8px 35px 8px;
+}
+
+.footer__use-box a {
+    color: #34ACA7;
+}
+
+.footer__use::after {
+    content: " | ";
+    color: #E5E5E5;    
+}
+
+.footer__use-box :last-child::after{
+    content: "";
+}
+
+.footer__social-box :first-child :first-child {
+    margin-left: 0;
+}
+
+.footer__icon {
+    width: 32px;
+    height: 32px;
+    background: no-repeat center center;
+    margin-left: 5px;
+}
+
+.footer__info :last-child {
+    padding-top: 5px;
+}
+
+
+.twitter-icon {
+    background-image: url(../../icon/twitter-icon.svg)
+}
+
+.fb-icon {
+    background-image: url(../../icon/fb-icon.svg)
+}
+
+.rss-icon {
+    background-image: url(../../icon/rss-icon.svg)
+}

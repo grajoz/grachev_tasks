@@ -1,0 +1,37 @@
+.tweet__title {
+    padding: 5px 0;
+    font-family: Verdana;
+    font-size: 12px;
+    line-height: 12px;
+    border-bottom: 1px dashed #E5E5E5;
+}
+
+.tweet__text {
+    padding: 10px 0;
+    font-size: 10px;
+    line-height: 19px;
+}
+
+.tweet__button {
+    align-items: center;
+    margin: 9px 0 5px 0;
+    padding: 0;
+    border: 1px solid #E5E5E5;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background: #FFFFFF;
+}
+
+.tweet__icon {
+    margin: 8px 5px;
+    width: 16px;
+    height: 13px;
+    background: no-repeat center center;
+    background-image: url(../../icon/tweetter-smal-icon.svg);
+}
+
+.tweet__button-text {
+    font-size: 9px;
+    line-height: 12px;
+    color: #34ACA7;
+}

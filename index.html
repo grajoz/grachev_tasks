@@ -2,53 +2,66 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="css/style.css">
+
+        <link rel="stylesheet" href="css/base/normalize.css">        
+        <link rel="stylesheet" href="css/base/base.css">
+
+        <link rel="stylesheet" href="css/layout/baner.css">
+        <link rel="stylesheet" href="css/layout/card_box.css">
+        <link rel="stylesheet" href="css/layout/content.css">
+        <link rel="stylesheet" href="css/layout/footer.css">
+        <link rel="stylesheet" href="css/layout/header.css">
+        <link rel="stylesheet" href="css/layout/subscribe.css">
+        <link rel="stylesheet" href="css/layout/tab_box.css">
+        <link rel="stylesheet" href="css/layout/tweet.css">
+
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Food sense</title>
     </head>
     <body>
         <div class="wrapper flex-column">
-            <div class="wrapper__content flex-row">
-                <header class="header flex-column first">
-                    <div class="logo">
-                        <a href="#">
-                            <img src="icon/icon-logo.svg" alt="logo">
-                        </a>
-                    </div>
+            <div class="content flex-row">
+                <section class="content__aside content-margin">
+                    <header class="header flex-column">
+                        <div class="logo">
+                            <a href="#">
+                                <img src="icon/icon-logo.svg" alt="logo">
+                            </a>
+                        </div>
 
-                    <ul class="menu flex-column">
-                        <li>
-                            <a class="menu__item flex-row" href="#">                            
-                                <img src="icon/food-icon.svg" alt="food">
-                                <div class="menu__title">Tastemakers</div>
+                        <ul class="menu flex-column">
+                            <li>
+                                <a class="menu__item flex-row" href="#">                            
+                                    <img src="icon/food-icon.svg" alt="food">
+                                    <div class="menu__title">Tastemakers</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="menu__item flex-row" href="#">
+                                    <img src="icon/blog-icon.svg" alt="blog">
+                                    <div class="menu__title">Blog</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="menu__item flex-row" href="#">
+                                    <img src="icon/a-list-icon.svg" alt="a-list">
+                                    <div class="menu__title">The A-List</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="menu__item flex-row" href="#">
+                                    <img src="icon/camera-icon.svg" alt="camera">
+                                    <div class="menu__title">Contribute</div>
                             </a>
-                        </li>
-                        <li>
-                            <a class="menu__item flex-row" href="#">
-                                <img src="icon/blog-icon.svg" alt="blog">
-                                <div class="menu__title">Blog</div>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="menu__item flex-row" href="#">
-                                <img src="icon/a-list-icon.svg" alt="a-list">
-                                <div class="menu__title">The A-List</div>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="menu__item flex-row" href="#">
-                                <img src="icon/camera-icon.svg" alt="camera">
-                                <div class="menu__title">Contribute</div>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="menu__item flex-row" href="#">
+                            </li>
+                             <li>
+                                <a class="menu__item flex-row" href="#">
                                 <img src="icon/about-icon.svg" alt="about">
-                                <div class="menu__title">About</div>
-                            </a>
-                        </li>
-                    </ul>
-
+                                    <div class="menu__title">About</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </header>
                     <ul class="tweet">
                         <li class="tweet__elem flex-column">
                             <div class="tweet__title">
@@ -60,7 +73,6 @@
                                 </div>
                             </button>
                         </li>
-
                         <li class="tweet__elem flex-column">
                             <div class="tweet__title">
                                 <span class="uppercase">Let’s be friends!</span>
@@ -76,8 +88,8 @@
                         </li>
                     </ul>
 
-                </header>
-                <section class="main flex-column first">
+                </section>
+                <section class="content__main flex-column content-margin">
                     <div class="baner">
                         <img class="baner__img" src="img/baner.png" alt="baner">
                         <div class="baner__title">Share your Foor Sence</div>
@@ -109,12 +121,12 @@
                         
                     </div>
 
-                    <form class="form flex-row">
+                    <form class="subscribe flex-row">
                             <img src="icon/mail-icon.svg" alt="mail">
-                        <p class="form__text italic">Sign up for out newsletter to receive a handpicked selection of the best 
+                        <p class="subscribe__text italic">Sign up for out newsletter to receive a handpicked selection of the best 
                             stories, recipes, and news, delivered weekly to your inbox.</p>
-                        <input class="form__input-text" type=”text” name=”e_mail”>
-                        <input class="form__button" type=”submit” value=Subscribe>
+                        <input class="subscribe__input-text" type=”text” name=”e_mail”>
+                        <input class="subscribe__button" type=”submit” value=Subscribe>
                     </form>
 
                     <div class="card-box flex-row">
