@@ -8,3 +8,49 @@
     font-size: 14px;
     line-height: 14px;
 }
+
+.header, .menu, .menu__item {
+    display: flex;
+    align-items: center;
+}
+
+@media only all and (min-width: 1177px) {
+    .header, .menu {
+        flex-direction: column;
+    }
+
+    .menu__item {
+        flex-direction: row;
+    }
+}
+
+@media only all and (min-width: 993px) and (max-width: 1176px) {
+    .header, .menu {
+        flex-direction: column;
+    }
+    .menu__item {
+        flex-direction: row;
+    }
+}
+
+@media only all and (min-width: 769px) and (max-width: 9926px) {
+    .header, .menu {
+        flex-direction: row;
+    }
+
+    .menu__item {
+        flex-direction: column;
+    }
+}
+
+@media only all and (min-width: 481px) and (max-width: 769px) {
+    .header, .menu {
+        flex-direction: row;
+    }
+}
+
+@media only all and (max-width: 480px) {
+    .header, .menu {
+        flex-direction: row;
+    }
+}
