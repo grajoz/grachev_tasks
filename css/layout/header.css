@@ -1,17 +1,19 @@
-.menu__item {
-    align-items: center;
-    margin-bottom: 36px;
-}
-
 .menu__title {
-    padding-left: 15px;
     font-size: 14px;
     line-height: 14px;
 }
 
 .header, .menu, .menu__item {
     display: flex;
+}
+
+.header, .menu__item {
     align-items: center;
+}
+
+.header, .menu {
+    flex-grow: 1;
+    
 }
 
 @media only all and (min-width: 1177px) {
@@ -21,6 +23,12 @@
 
     .menu__item {
         flex-direction: row;
+        margin-bottom: 36px;
+
+    }
+
+    .menu__title {
+        padding-left: 15px;
     }
 }
 
@@ -28,29 +36,85 @@
     .header, .menu {
         flex-direction: column;
     }
+
+    .header {
+        justify-content: space-between;
+    }
+
+    .menu {
+        justify-content: space-around;
+    }
+
     .menu__item {
         flex-direction: row;
+        margin-bottom: 36px;
+
+    }
+
+    .menu__title {
+        padding-left: 15px;
     }
 }
 
-@media only all and (min-width: 769px) and (max-width: 9926px) {
+@media only all and (min-width: 769px) and (max-width: 992px) {
     .header, .menu {
         flex-direction: row;
+        justify-content: space-between;
     }
 
     .menu__item {
         flex-direction: column;
+
+    }
+
+    .content-margin-header:first-child {
+        margin-right: 100px;
+    }
+
+    .menu__title {
+        margin-top: 12px;
     }
 }
 
-@media only all and (min-width: 481px) and (max-width: 769px) {
+@media only all and (min-width: 481px) and (max-width: 768px) {
     .header, .menu {
         flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .menu__item {
+        flex-direction: column;
+
+    }
+
+    .content-margin-header:first-child {
+        margin-right: 5px;
+    }
+
+    .menu__img {
+        display: none;
     }
 }
 
 @media only all and (max-width: 480px) {
-    .header, .menu {
+
+    .header {
+        flex-direction: column-reverse;
+    }
+
+    .menu {
         flex-direction: row;
+        justify-content: space-between;
+        align-self: stretch;
+    }
+
+    .menu__item {
+        flex-direction: column;
+        margin-bottom: 36px;
+    }
+
+
+    .menu__img {
+        display: none;
     }
 }

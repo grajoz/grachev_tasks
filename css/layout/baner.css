@@ -14,18 +14,18 @@
 
 .baner__title {
     top: 285px;
-    background: #FFFFFF;
+    padding: 14px 28px;
     color: #000000;
     font-size: 22px;
     line-height: 22px;
-    padding: 14px 28px;
+    background: #FFFFFF;
 }
 
 .baner__text {
     top: 334px;
-    background: #000000;
+    padding: 14px 28px;
     color: #FFFFFF;
     font-size: 14px;
     line-height: 14px;
-    padding: 14px 28px;
+    background: #000000;
 }
