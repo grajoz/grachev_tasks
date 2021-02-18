@@ -5,16 +5,21 @@
 .baner__img {
     height: 100%;
     width: 100%;
+    display: block;
+}
+
+.baner__description {
+    bottom: 69px;
+    align-items: flex-start;
+    position: absolute;
+    font-style: italic; 
 }
 
 .baner__title, .baner__text {
-    position: absolute;
-    font-style: italic;
+    padding: 14px 28px;
 }
 
 .baner__title {
-    top: 285px;
-    padding: 14px 28px;
     color: #000000;
     font-size: 22px;
     line-height: 22px;
@@ -22,10 +27,57 @@
 }
 
 .baner__text {
-    top: 334px;
-    padding: 14px 28px;
     color: #FFFFFF;
     font-size: 14px;
     line-height: 14px;
     background: #000000;
+}
+
+@media only all and (min-width: 481px) and (max-width: 769px) {
+    .baner__description {
+        bottom: 0px;
+        align-items: stretch;
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .baner__title, .baner__text {
+        padding: 14px 10px;
+    }
+
+    .baner__title {
+        opacity: 0.6;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        width: 100%;
+    }
+/*
+    .baner__img {
+        height: 353px;
+        width: 545px;
+    }*/
+
+}
+
+@media only all and (max-width: 480px) {
+    .baner__description {
+        bottom: 0px;
+        align-items: stretch;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .baner__title {
+        opacity: 0.6;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .baner__title, .baner__text {
+        padding: 14px 10px;
+        width: 100%;
+    }
+/*
+    .baner__img {
+        height: 373px;
+        width: 545px;
+    }*/
 }

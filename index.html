@@ -92,8 +92,10 @@
                 <section class="content__main content-margin">
                     <div class="baner">
                         <img class="baner__img" src="img/baner.png" alt="baner">
-                        <div class="baner__title">Share your Foor Sence</div>
-                        <div class="baner__text">Submit yout favorite recipes, become a contributor, or get interviewed.</div>
+                        <div class="baner__description flex-column">
+                            <div class="baner__title">Share your Foor Sence</div>
+                            <div class="baner__text">Submit yout favorite recipes, become a contributor, or get interviewed.</div>
+                        </div>
                     </div>
                     
                     <div class="tab-box flex-row">
@@ -119,14 +121,19 @@
                         
                     </div>
 
-                    <form class="subscribe flex-row">
+                    <div class="subscribe">
+                        <div class="subscribe__description">
                             <img src="icon/mail-icon.svg" alt="mail">
-                        <p class="subscribe__text italic">Sign up for out newsletter to receive a handpicked selection of the best 
-                            stories, recipes, and news, delivered weekly to your inbox.
-                        </p>
-                        <input class="subscribe__input-text" type=”text” name=”e_mail”>
-                        <input class="subscribe__button" type=”submit” value=Subscribe>
-                    </form>
+                            <p class="subscribe__text italic">
+                                Sign up for out newsletter to receive a handpicked selection of the best 
+                                stories, recipes, and news, delivered weekly to your inbox.
+                            </p>
+                        </div>
+                        <form  class="subscribe__form" action="submit">
+                            <input class="subscribe__input-text" type=”text” name=”e_mail”>
+                            <input class="subscribe__button" type=”submit” value=Subscribe>                                
+                        </form>
+                    </div>
 
                     <div class="card-box flex-row">
                         <div class="card">

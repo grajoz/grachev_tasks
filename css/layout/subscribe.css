@@ -1,5 +1,8 @@
 .subscribe {
-    padding: 9px;    
+    padding: 9px;
+    
+    display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-around;
     border-top: 1px dashed #E5E5E5;
@@ -35,4 +38,25 @@
     font-size: 10px;
     line-height: 10px;
     cursor: pointer;
+}
+
+.subscribe__description, .subscribe__form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+
+@media only all and (min-width: 481px) and (max-width: 769px) {
+    .subscribe {
+        flex-direction: column;
+    }
+
+}
+
+@media only all and (max-width: 480px) {
+    .subscribe {
+        flex-direction: column;
+    }
 }
