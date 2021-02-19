@@ -40,6 +40,10 @@
     margin-left: 0;
 }
 
+.footer__info:last-child, .footer__social-box:last-child {
+    margin-left: 5px;
+}
+
 .twitter-icon {
     background-image: url(../../icon/twitter-icon.svg)
 }

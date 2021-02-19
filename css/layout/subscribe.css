@@ -1,19 +1,30 @@
 .subscribe {
     padding: 9px;
-    
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     border-top: 1px dashed #E5E5E5;
     border-bottom: 1px dashed #E5E5E5;
-
-    overflow: hidden;
 }
 
-.subscribe >*{
-    margin-left: 9px;
-    margin-right: 9px;
+.subscribe__description, .subscribe__form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.subscribe__description:not(:first-child), .subscribe__form:not(:first-child) {
+    margin-left: 8px;
+}
+
+.subscribe__img:not(:first-child), .subscribe__text:not(:first-child) {
+    margin-left: 16px;
+}
+
+.subscribe__input-text:not(:first-child), .subscribe__button:not(:first-child) {
+    margin-left: 18px;
 }
 
 .subscribe__text{
@@ -22,10 +33,22 @@
     color: #000000;
 }
 
+.subscribe__form {
+    align-self: stretch;
+    flex-grow: 1;
+}
 .subscribe__input-text {
-    width: 160px;
-    height: 22px;
+    height: 23px;
     border: 1px solid #E5E5E5;
+
+    flex-grow: 1;
+}
+
+.subscribe__input-text::placeholder {
+    padding: 6px;
+    font-size: 10px;
+    line-height: 10px;
+    color: #E5E5E5;
 }
 
 .subscribe__button {
@@ -40,12 +63,7 @@
     cursor: pointer;
 }
 
-.subscribe__description, .subscribe__form {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: stretch;
-}
+
 
 
 @media only all and (min-width: 481px) and (max-width: 769px) {
@@ -53,10 +71,26 @@
         flex-direction: column;
     }
 
+    .subscribe__description:first-child, .subscribe__form:first-child {
+        margin-bottom: 17px;
+    }
+
+    .subscribe__description:not(:first-child), .subscribe__form:not(:first-child) {
+        margin-left: 0;
+    }
+
 }
 
 @media only all and (max-width: 480px) {
     .subscribe {
         flex-direction: column;
+    }
+
+    .subscribe__description:first-child, .subscribe__form:first-child {
+        margin-bottom: 17px;
+    }
+
+    .subscribe__description:not(:first-child), .subscribe__form:not(:first-child) {
+        margin-left: 0;
     }
 }
