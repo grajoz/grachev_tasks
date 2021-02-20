@@ -1,12 +1,12 @@
 .card-box {
     flex-wrap: wrap;
-    padding-bottom: 7px;
+    padding-bottom: 10px;
     justify-content: space-between;
 }
 
 .card {
-    width: 207px;
-    padding-top: 10px;
+    width: 23.5%;
+    padding-top: 25px;
 }
 
 .card__img-wrap {
@@ -52,4 +52,23 @@
 
 .card__read-more::after {
     content: "...";
+}
+
+@media only all and (min-width: 481px) and (max-width: 769px) {
+    .card {
+        width: 49%;
+        padding-top: 15px;
+    }
+}
+
+@media only all and (max-width: 480px) {
+    .card-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 97%;
+        padding-top: 25px;
+    }
 }
