@@ -90,9 +90,6 @@
         flex-direction: column;
     }
 
-    .subscribe__form {
-        flex-wrap: wrap;
-    }
     .subscribe__input-text {
         flex-grow: 0;
     }
@@ -106,4 +103,12 @@
     .subscribe__form:not(:first-child) {
         margin-left: 0;
     }
+}
+
+@media only all and (max-width: 315px) {
+
+    .subscribe__form {
+        flex-wrap: wrap;
+    }
+
 }
