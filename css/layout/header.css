@@ -13,7 +13,28 @@
 
 .header, .menu {
     flex-grow: 1;
-    
+}
+
+.menu__icon {
+    width: 32px;
+    height: 32px;
+    background: no-repeat center center;
+}
+
+.menu__icon_food {
+    background-image: url(../../icon/food-icon.svg);
+}
+.menu__icon_blog {
+    background-image: url(../../icon/blog-icon.svg);
+}
+.menu__icon_a-list {
+    background-image: url(../../icon/a-list-icon.svg);
+}
+.menu__icon_camera {
+    background-image: url(../../icon/camera-icon.svg);
+}
+.menu__icon_about {
+    background-image: url(../../icon/about-icon.svg);
 }
 
 @media only all and (min-width: 1177px) {
@@ -88,7 +109,7 @@
         margin-right: 5px;
     }
 
-    .menu__img {
+    .menu__icon {
         display: none;
     }
 }
@@ -103,6 +124,7 @@
         flex-direction: row;
         justify-content: space-between;
         align-self: stretch;
+        flex-wrap: wrap;
     }
 
     .menu__item {
@@ -113,7 +135,7 @@
         margin-bottom: 36px;
     }
 
-    .menu__img {
+    .menu__icon {
         display: none;
     }
 }

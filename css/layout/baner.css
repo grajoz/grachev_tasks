@@ -6,6 +6,8 @@
     height: 100%;
     width: 100%;
     display: block;
+    text-align: center;
+    overflow: hidden;
 }
 
 .baner__description {
@@ -34,6 +36,10 @@
 }
 
 @media only all and (min-width: 481px) and (max-width: 769px) {
+    .baner {
+        height: 353px;
+    }
+    
     .baner__description {
         bottom: 0px;
         align-items: stretch;
@@ -50,18 +56,16 @@
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         width: 100%;
     }
-/*
-    .baner__img {
-        height: 353px;
-        width: 545px;
-    }*/
 
 }
 
 @media only all and (max-width: 480px) {
+    .baner {
+        height: 373px;
+        overflow: hidden;
+    }
     .baner__description {
         bottom: 0px;
-        align-items: stretch;
         width: 100%;
         overflow: hidden;
     }
@@ -75,9 +79,8 @@
         padding: 14px 10px;
         width: 100%;
     }
-/*
+
     .baner__img {
-        height: 373px;
-        width: 545px;
-    }*/
+        object-fit: cover;
+    }
 }

@@ -9,22 +9,26 @@
     border-bottom: 1px dashed #E5E5E5;
 }
 
-.subscribe__description, .subscribe__form {
+.subscribe__description,
+.subscribe__form {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 
-.subscribe__description:not(:first-child), .subscribe__form:not(:first-child) {
+.subscribe__description:not(:first-child),
+.subscribe__form:not(:first-child) {
     margin-left: 8px;
 }
 
-.subscribe__img:not(:first-child), .subscribe__text:not(:first-child) {
+.subscribe__img:not(:first-child),
+.subscribe__text:not(:first-child) {
     margin-left: 16px;
 }
 
-.subscribe__input-text:not(:first-child), .subscribe__button:not(:first-child) {
+.subscribe__input-text:not(:first-child),
+.subscribe__button:not(:first-child) {
     margin-left: 18px;
 }
 
@@ -36,12 +40,10 @@
 
 .subscribe__form {
     align-self: stretch;
-    flex-grow: 1;
 }
 .subscribe__input-text {
     height: 23px;
     border: 1px solid #E5E5E5;
-
     flex-grow: 1;
 }
 
@@ -64,20 +66,19 @@
     cursor: pointer;
 }
 
-
-
-
 @media only all and (min-width: 481px) and (max-width: 769px) {
     .subscribe {
         margin-top: 39px;
         flex-direction: column;
     }
 
-    .subscribe__description:first-child, .subscribe__form:first-child {
+    .subscribe__description:first-child,
+    .subscribe__form:first-child {
         margin-bottom: 17px;
     }
 
-    .subscribe__description:not(:first-child), .subscribe__form:not(:first-child) {
+    .subscribe__description:not(:first-child),
+    .subscribe__form:not(:first-child) {
         margin-left: 0;
     }
 
@@ -89,11 +90,20 @@
         flex-direction: column;
     }
 
-    .subscribe__description:first-child, .subscribe__form:first-child {
+    .subscribe__form {
+        flex-wrap: wrap;
+    }
+    .subscribe__input-text {
+        flex-grow: 0;
+    }
+
+    .subscribe__description:first-child,
+    .subscribe__form:first-child {
         margin-bottom: 17px;
     }
 
-    .subscribe__description:not(:first-child), .subscribe__form:not(:first-child) {
+    .subscribe__description:not(:first-child),
+    .subscribe__form:not(:first-child) {
         margin-left: 0;
     }
 }
