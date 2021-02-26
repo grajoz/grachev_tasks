@@ -15,7 +15,7 @@
 }
 
 .card__img {
-    border: 11px solid #FFFFFF;
+    border: 11px solid $white-color;
     box-sizing: border-box;
     width: 100%;
 }
@@ -42,8 +42,9 @@
     padding-top: 9px;
 }
 
-.card__caption, .card__read-more, a {
-    color: #34ACA7;
+.card__caption,
+.card__read-more, a {
+    color:$link-color;
 }
 
 .card__data::after {

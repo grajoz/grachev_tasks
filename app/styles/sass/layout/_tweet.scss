@@ -1,9 +1,11 @@
+@import "variables/variables";
+
 .tweet__title {
     padding: 5px 0;
-    font-family: Verdana;
+    font-family: $font-tweet;
     font-size: 12px;
     line-height: 12px;
-    border-bottom: 1px dashed #E5E5E5;
+    border-bottom: 1px dashed $smokie-color;
 }
 
 .tweet__text {
@@ -16,10 +18,10 @@
     align-items: center;
     margin: 9px 0 5px 0;
     padding: 0;
-    border: 1px solid #E5E5E5;
+    border: 1px solid $smokie-color;
     box-sizing: border-box;
     border-radius: 5px;
-    background: #FFFFFF;
+    background: $white-color;
 }
 
 .tweet__icon {
@@ -33,7 +35,7 @@
 .tweet__button-text {
     font-size: 9px;
     line-height: 12px;
-    color: #34ACA7;
+    color: $link-color;
 }
 
 @media only all and (min-width: 769px) and (max-width: 992px) {

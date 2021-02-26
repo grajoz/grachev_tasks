@@ -3,11 +3,14 @@
     line-height: 14px;
 }
 
-.header, .menu, .menu__item {
+.header,
+.menu,
+.menu__item {
     display: flex;
 }
 
-.header, .menu__item {
+.header,
+.menu__item {
     align-items: center;
 }
 
@@ -19,26 +22,16 @@
     width: 32px;
     height: 32px;
     background: no-repeat center center;
-}
-
-.menu__icon_food {
-    background-image: url(../../icon/food-icon.svg);
-}
-.menu__icon_blog {
-    background-image: url(../../icon/blog-icon.svg);
-}
-.menu__icon_a-list {
-    background-image: url(../../icon/a-list-icon.svg);
-}
-.menu__icon_camera {
-    background-image: url(../../icon/camera-icon.svg);
-}
-.menu__icon_about {
-    background-image: url(../../icon/about-icon.svg);
+    @each $icon in $aside {
+        &_#{$icon} {
+            background-image: url('../../icon/#{$icon}-icon.svg');
+        }
+    }
 }
 
 @media only all and (min-width: 1177px) {
-    .header, .menu {
+    .header,
+    .menu {
         flex-direction: column;
     }
 
@@ -53,7 +46,8 @@
 }
 
 @media only all and (min-width: 993px) and (max-width: 1176px) {
-    .header, .menu {
+    .header,
+    .menu {
         flex-direction: column;
     }
 
@@ -63,20 +57,19 @@
 
     .menu {
         justify-content: space-around;
-    }
-
-    .menu__item {
-        flex-direction: row;
-        margin-bottom: 36px;
-    }
-
-    .menu__title {
-        padding-left: 15px;
+        &__item {
+            flex-direction: row;
+            margin-bottom: 36px;
+        }
+        &__title {
+            padding-left: 15px;
+        }
     }
 }
 
 @media only all and (min-width: 769px) and (max-width: 992px) {
-    .header, .menu {
+    .header,
+    .menu {
         flex-direction: row;
         justify-content: space-between;
     }
@@ -96,7 +89,8 @@
 }
 
 @media only all and (min-width: 481px) and (max-width: 768px) {
-    .header, .menu {
+    .header,
+    .menu {
         flex-direction: row;
         justify-content: space-between;
     }
@@ -119,23 +113,19 @@
     .header {
         flex-direction: column-reverse;
     }
-
     .menu {
         flex-direction: row;
         justify-content: space-between;
         align-self: stretch;
         flex-wrap: wrap;
+        &__item {
+            flex-direction: column;
+        }
+        &__icon {
+            display: none;
+        }
     }
-
-    .menu__item {
-        flex-direction: column;
-    }
-
     .content-margin-header:last-child {
         margin-bottom: 36px;
-    }
-
-    .menu__icon {
-        display: none;
     }
 }

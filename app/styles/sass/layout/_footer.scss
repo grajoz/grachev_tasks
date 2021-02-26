@@ -1,54 +1,52 @@
+@import "variables/variables";
+
 .footer {
     font-size: 12px;
     line-height: 12px;
     justify-content: space-between;
     align-items: center;
-    border-top: 2px solid #E5E5E5;
+    border-top: 2px solid $smokie-color;
+    
+    &__use-box a {
+        color:$link-color;
+    }
+    
+    &__use::after {
+        content: " | ";
+        color:$smokie-color;
+        white-space: pre;
+    }
+    
+    &__use:last-child::after{
+        content: "";
+    }
+    
+    &__info>*:not(:last-child) {
+        margin-bottom: 5px;
+    }
+    
+    &__icon {
+        width: 32px;
+        height: 32px;
+        background: no-repeat center center;
+    }
+    
+    &__social:not(:first-child)  {
+        margin-left: 5px;
+    }
+    
+    &__info:last-child,
+    &__social-box:last-child {
+        margin-left: 5px;
+    }
+
 }
 
-.footer__use-box a {
-    color: #34ACA7;
-}
 
-.footer__use::after {
-    content: " | ";
-    color: #E5E5E5;
-    white-space: pre;
-}
-
-.footer__use:last-child::after{
-    content: "";
-}
-
-.footer__info>*:not(:last-child) {
-    margin-bottom: 5px;
-}
-
-.footer__icon {
-    width: 32px;
-    height: 32px;
-    background: no-repeat center center;
-}
-
-.footer__social:not(:first-child)  {
-    margin-left: 5px;
-}
-
-.footer__info:last-child,
-.footer__social-box:last-child {
-    margin-left: 5px;
-}
-
-.twitter-icon {
-    background-image: url(../../icon/twitter-icon.svg)
-}
-
-.fb-icon {
-    background-image: url(../../icon/fb-icon.svg)
-}
-
-.rss-icon {
-    background-image: url(../../icon/rss-icon.svg)
+@each $icon in twitter, fb, rss {
+    .#{$icon}-icon {
+        background-image: url('../../icon/#{$icon}-icon.svg');
+    }
 }
 
 @media only all and (min-width: 1177px) {

@@ -1,0 +1,59 @@
+@import "variables/variables";
+
+.tab-box {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.tab {
+    justify-content: center;
+    width: 25%;
+    padding: 26px 0px 22px 20px;
+    background:$tab-color;
+    &:hover {
+        background: $tab-hover-color;
+    }
+    &__title {
+        font-size: 18px;
+        line-height: 18px;
+    }
+    &__text {
+        font-size: 10px;
+        line-height: 19px;
+        font-style: italic;
+    }
+}
+
+@media only all and (min-width: 993px) and (max-width: 1176px) {
+    .tab {
+        padding: 10px;
+        &__text {
+            display: none;
+        }
+        &__title {
+            align-self: center;
+            font-size: 14px;
+        }
+    }
+}
+
+@media only all and (min-width: 769px) and (max-width: 992px) {
+    .tab {
+        padding: 10px;
+        &__text {
+            display: none;
+        }
+        &__title {
+            align-self: center;
+            font-size: 14px;
+        }
+    }
+}
+
+@media only all and (max-width: 768px) {
+    .tab-box {
+        display: none;
+    }
+}
+

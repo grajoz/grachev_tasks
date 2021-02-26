@@ -1,10 +1,13 @@
+@import "variables/variables";
+
+
 * {
     box-sizing: border-box;
 }
 
 body {
     margin: auto;
-    font-family: Arial, Helvetica, sans-serif ;
+    font-family: $font-stack;
 }
 
 button {
@@ -13,7 +16,7 @@ button {
 
 a {
     text-decoration: none;
-    color: #34ACA7;
+    color: $link-color;
 }
 
 li {
@@ -26,19 +29,17 @@ h2, p, ul, li {
 }
 
 .smokie {
-   color: #E5E5E5;
-}
+   color: $smokie-color;
+}  
 
 .italic {
     font-style: italic;
 }
 
 .flex-row {
-    display: flex;
-    flex-direction: row;
+    @include flex (row);
 }
 
 .flex-column {
-    display: flex;
-    flex-direction: column;
+    @include flex (column);
 }

@@ -1,26 +1,20 @@
 
 @media only all and (min-width: 1177px) {
-
     .wrapper {
-        margin: 50px 135px 0px 135px;
+        #{$otstup}: 50px 135px 0px 135px;
     }
-
     .content {
-        display: flex;
-        flex-direction: row;
+        @include flex (row);
         overflow: hidden;
-    }
-
-    .content__aside {
-        width: 140px;
-    }
-
-    .content__main {
-        overflow: hidden;       
-    }
-
-    .content-margin:first-child {
-        margin-right: 44px;
+        &__aside {
+            width: 140px;
+        }
+        &__main {
+            overflow: hidden;       
+        }
+        &-#{$margin}:first-child {
+            #{$margin}-right: 44px;
+        }
     }
 }
 
@@ -28,36 +22,28 @@
     .wrapper {
         margin: 50px 135px 0px 135px;
     }
-
     .content {
-        display: flex;
-        flex-direction: row;
+        @include flex (row);
+        &__aside {
+            width: 140px;
+        }
+        &-margin:first-child {
+            margin-right: 44px;
+        }
     }
-
-    .content__aside {
-        width: 140px;
-    }
-
-    .content-margin:first-child {
-        margin-right: 44px;
-    }
-
-
 }
 
 @media only all and (min-width: 769px) and (max-width: 992px) {
     .wrapper {
         margin: 20px 100px 0px 100px;
     }
-
     .content {
-        display: flex;
-        flex-direction: column;
+        @include flex (column);
+        &-margin:first-child {
+            margin-bottom: 50px;
+        }        
     }
 
-    .content-margin:first-child {
-        margin-bottom: 50px;
-    }
 }
 
 @media only all and (min-width: 481px) and (max-width: 769px) {
@@ -66,12 +52,10 @@
     }
 
     .content {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .content-margin:first-child {
-        margin-bottom: 40px;
+        @include flex (column);
+        &-margin:first-child {
+            margin-bottom: 40px;
+        }
     }
 }
 
@@ -79,19 +63,15 @@
     .wrapper {
         margin-top: 35px;
     }
-
     .content__aside, .tab-box, .subscribe, .card-box, .footer {
         margin-left: 25px;
         margin-right: 25px;
     }
-
     .content {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .content-margin:first-child {
-        margin-bottom: 40px;
+        @include flex (column);
+        &-margin:first-child {
+            margin-bottom: 40px;
+        }
     }
 }
 
@@ -99,18 +79,14 @@
     .wrapper {
         margin-top: 25px;
     }
-
     .content__aside, .tab-box, .subscribe, .card-box, .footer {
         margin-left: 15px;
         margin-right: 15px;
     }
-
     .content {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .content-margin:first-child {
-        margin-bottom: 30px;
+        @include flex (column);
+        &-margin:first-child {
+            margin-bottom: 30px;
+        }
     }
 }
