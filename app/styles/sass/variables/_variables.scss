@@ -1,0 +1,19 @@
+$smokie-color: #E5E5E5;
+$link-color: #34ACA7;
+$black-color: #000000;
+$white-color: #FFFFFF;
+
+$tab-color: #EFF8F7;
+$tab-hover-color: #D9EFEC;
+
+$font-stack: Arial, Helvetica, sans-serif ;
+$font-tweet:  Verdana;
+
+$margin: margin;
+$otstup: margin;
+$aside: food, blog, a-list, camera, about;
+
+@mixin flex ($direction) {
+    display: flex;
+    flex-direction: $direction;
+}

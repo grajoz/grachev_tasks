@@ -1,0 +1,89 @@
+@import "variables/variables";
+
+.footer {
+    font-size: 12px;
+    line-height: 12px;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid $smokie-color;
+    
+    &__use-box a {
+        color:$link-color;
+    }
+    
+    &__use::after {
+        content: " | ";
+        color:$smokie-color;
+        white-space: pre;
+    }
+    
+    &__use:last-child::after{
+        content: "";
+    }
+    
+    &__info>*:not(:last-child) {
+        margin-bottom: 5px;
+    }
+    
+    &__icon {
+        width: 32px;
+        height: 32px;
+        background: no-repeat center center;
+    }
+    
+    &__social:not(:first-child)  {
+        margin-left: 5px;
+    }
+    
+    &__info:last-child,
+    &__social-box:last-child {
+        margin-left: 5px;
+    }
+
+}
+
+
+@each $icon in twitter, fb, rss {
+    .#{$icon}-icon {
+        background-image: url('../../icon/#{$icon}-icon.svg');
+    }
+}
+
+@media only all and (min-width: 1177px) {
+    .footer {
+        padding: 25px 8px 35px 8px;   
+    }
+}
+
+@media only all and (min-width: 993px) and (max-width: 1176px) {
+    .footer {
+        padding: 25px 0px 35px 0px;   
+    }
+}
+
+@media only all and (min-width: 769px) and (max-width: 992px) {
+    .footer {
+        padding: 30px 0px 20px 0px;   
+    }
+}
+
+@media only all and (min-width: 481px) and (max-width: 769px) {
+    .footer {
+        padding: 24px 0px 20px 0px;   
+    }
+}
+
+@media only all and (min-width: 351px) and (max-width: 480px) {
+    .footer {
+        padding: 20px 0px 20px 0px;   
+    }
+}
+
+@media only all and (max-width: 350px) {
+    .footer {
+        padding: 20px 0px 20px 0px;   
+        font-size: 9px;
+        line-height: 9px;
+        flex-wrap: wrap;
+    }
+}

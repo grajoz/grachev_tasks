@@ -1,0 +1,45 @@
+@import "variables/variables";
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: auto;
+    font-family: $font-stack;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: $link-color;
+}
+
+li {
+    list-style-type: none;
+}
+
+h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+.smokie {
+   color: $smokie-color;
+}  
+
+.italic {
+    font-style: italic;
+}
+
+.flex-row {
+    @include flex (row);
+}
+
+.flex-column {
+    @include flex (column);
+}

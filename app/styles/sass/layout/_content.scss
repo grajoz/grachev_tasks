@@ -1,0 +1,92 @@
+
+@media only all and (min-width: 1177px) {
+    .wrapper {
+        #{$otstup}: 50px 135px 0px 135px;
+    }
+    .content {
+        @include flex (row);
+        overflow: hidden;
+        &__aside {
+            width: 140px;
+        }
+        &__main {
+            overflow: hidden;       
+        }
+        &-#{$margin}:first-child {
+            #{$margin}-right: 44px;
+        }
+    }
+}
+
+@media only all and (min-width: 993px) and (max-width: 1176px) {
+    .wrapper {
+        margin: 50px 135px 0px 135px;
+    }
+    .content {
+        @include flex (row);
+        &__aside {
+            width: 140px;
+        }
+        &-margin:first-child {
+            margin-right: 44px;
+        }
+    }
+}
+
+@media only all and (min-width: 769px) and (max-width: 992px) {
+    .wrapper {
+        margin: 20px 100px 0px 100px;
+    }
+    .content {
+        @include flex (column);
+        &-margin:first-child {
+            margin-bottom: 50px;
+        }        
+    }
+
+}
+
+@media only all and (min-width: 481px) and (max-width: 769px) {
+    .wrapper {
+        margin: 20px 30px 0px 30px;
+    }
+
+    .content {
+        @include flex (column);
+        &-margin:first-child {
+            margin-bottom: 40px;
+        }
+    }
+}
+
+@media only all and (min-width: 351px) and (max-width: 480px) {
+    .wrapper {
+        margin-top: 35px;
+    }
+    .content__aside, .tab-box, .subscribe, .card-box, .footer {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    .content {
+        @include flex (column);
+        &-margin:first-child {
+            margin-bottom: 40px;
+        }
+    }
+}
+
+@media only all and (max-width: 350px) {
+    .wrapper {
+        margin-top: 25px;
+    }
+    .content__aside, .tab-box, .subscribe, .card-box, .footer {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .content {
+        @include flex (column);
+        &-margin:first-child {
+            margin-bottom: 30px;
+        }
+    }
+}

@@ -1,0 +1,131 @@
+.menu__title {
+    font-size: 14px;
+    line-height: 14px;
+}
+
+.header,
+.menu,
+.menu__item {
+    display: flex;
+}
+
+.header,
+.menu__item {
+    align-items: center;
+}
+
+.header, .menu {
+    flex-grow: 1;
+}
+
+.menu__icon {
+    width: 32px;
+    height: 32px;
+    background: no-repeat center center;
+    @each $icon in $aside {
+        &_#{$icon} {
+            background-image: url('../../icon/#{$icon}-icon.svg');
+        }
+    }
+}
+
+@media only all and (min-width: 1177px) {
+    .header,
+    .menu {
+        flex-direction: column;
+    }
+
+    .menu__item {
+        flex-direction: row;
+        margin-bottom: 36px;
+    }
+
+    .menu__title {
+        padding-left: 15px;
+    }
+}
+
+@media only all and (min-width: 993px) and (max-width: 1176px) {
+    .header,
+    .menu {
+        flex-direction: column;
+    }
+
+    .header {
+        justify-content: space-between;
+    }
+
+    .menu {
+        justify-content: space-around;
+        &__item {
+            flex-direction: row;
+            margin-bottom: 36px;
+        }
+        &__title {
+            padding-left: 15px;
+        }
+    }
+}
+
+@media only all and (min-width: 769px) and (max-width: 992px) {
+    .header,
+    .menu {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .menu__item {
+        flex-direction: column;
+
+    }
+
+    .content-margin-header:first-child {
+        margin-right: 100px;
+    }
+
+    .menu__title {
+        margin-top: 12px;
+    }
+}
+
+@media only all and (min-width: 481px) and (max-width: 768px) {
+    .header,
+    .menu {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .menu__item {
+        flex-direction: column;
+    }
+
+    .content-margin-header:first-child {
+        margin-right: 5px;
+    }
+
+    .menu__icon {
+        display: none;
+    }
+}
+
+@media only all and (max-width: 480px) {
+
+    .header {
+        flex-direction: column-reverse;
+    }
+    .menu {
+        flex-direction: row;
+        justify-content: space-between;
+        align-self: stretch;
+        flex-wrap: wrap;
+        &__item {
+            flex-direction: column;
+        }
+        &__icon {
+            display: none;
+        }
+    }
+    .content-margin-header:last-child {
+        margin-bottom: 36px;
+    }
+}
