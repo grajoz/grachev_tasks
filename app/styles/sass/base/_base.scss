@@ -1,5 +1,5 @@
 @import "variables/variables";
-
+@import "mixins/mixins";
 
 * {
     box-sizing: border-box;
@@ -29,7 +29,7 @@ h2, p, ul, li {
 }
 
 .smokie {
-   color: $smokie-color;
+   color: $smokie;
 }  
 
 .italic {

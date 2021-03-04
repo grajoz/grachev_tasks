@@ -1,0 +1,43 @@
+@import "variables/variables";
+@import "mixins/mixins";
+
+.tweet {
+    &__title {
+        padding: 5px 0;
+        font-family: $font-tweet;
+        @include font (12px, 12px);
+        border-bottom: 1px dashed $smokie;
+    }
+    &__text {
+        padding: 10px 0;
+        @include font (10px, 19px);
+    }
+    &__button {
+        align-items: center;
+        margin: 9px 0 5px 0;
+        padding: 0;
+        border: 1px solid $smokie;
+        box-sizing: border-box;
+        border-radius: 5px;
+        background: $white;
+    }
+    &__icon {
+        margin: 8px 5px;
+        width: 16px;
+        height: 13px;
+        background: no-repeat center center;
+        background-image: url(../../icon/tweetter-smal-icon.svg);
+    }
+    &__button-text {
+        @include font (9px, 12px);
+        color: $link-color;
+    }
+}
+
+@media only all  and (max-width: 992px) {
+    .tweet {
+        display: none;
+    }
+}
+
+

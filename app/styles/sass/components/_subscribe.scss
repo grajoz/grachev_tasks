@@ -1,0 +1,111 @@
+@import "variables/variables";
+
+.subscribe {
+    margin-top: 18px;
+    padding: 9px;
+    @include flex (row);
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px dashed $smokie;
+    border-bottom: 1px dashed $smokie;
+    &__form {
+        flex-shrink: 0;
+        @include flex (row);
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    &__description {
+        flex-shrink: 0;
+        @extend .subscribe__form
+    }
+
+ 
+    &__description:not(:first-child),
+    &__form:not(:first-child) {
+        margin-left: 8px;
+    }
+
+    &__img:not(:first-child),
+    &__text:not(:first-child) {
+        margin-left: 16px;
+    }
+
+    &__input-text:not(:first-child),
+    &__button:not(:first-child) {
+        margin-left: 18px;
+    }
+
+    &__text{
+        font-size: 14px;
+        line-height: 16px;
+        color: $black;
+    }
+
+    &__form {
+        align-self: stretch;
+    }
+    &__input-text {
+        height: 23px;
+        border: 1px solid $smokie;
+        flex-grow: 1;
+    }
+
+    &__input-text::placeholder {
+        padding: 6px;
+        font-size: 10px;
+        line-height: 10px;
+        color: $smokie;
+    }
+
+    &__button {
+        width: 80px;
+        height: 23px;
+        background: linear-gradient(180deg, #F4F3F3 0%, #BBB9B9 100%);
+        border: 1px solid $smokie;
+        border-radius: 2px;
+        text-align: center;
+        font-size: 10px;
+        line-height: 10px;
+        cursor: pointer;
+    }
+}
+@media only all and (min-width: 481px) and (max-width: 769px) {
+    .subscribe {
+        margin-top: 39px;
+        flex-direction: column;
+        &__description:first-child,
+        .subscribe__form:first-child {
+            margin-bottom: 17px;
+        }
+        &__description:not(:first-child),
+        &__form:not(:first-child) {
+            margin-left: 0;
+        }
+    }
+}
+
+@media only all and (max-width: 480px) {
+    .subscribe {
+        margin-top: 25px;
+        flex-direction: column;
+        &__input-text {
+            flex-grow: 0;
+        }
+        &__description:first-child,
+        &__form:first-child {
+            margin-bottom: 17px;
+        }
+        &__description:not(:first-child),
+        &__form:not(:first-child) {
+            margin-left: 0;
+        }
+    }
+}
+
+@media only all and (max-width: 315px) {
+
+    .subscribe__form {
+        flex-wrap: wrap;
+    }
+}

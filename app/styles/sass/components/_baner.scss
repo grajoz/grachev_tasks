@@ -1,0 +1,75 @@
+@import "variables/variables";
+@import "mixins/mixins";
+
+.baner {
+    position: relative;
+    &__img {
+        height: 100%;
+        width: 100%;
+        flex-shrink: 1;
+        display: block;
+        text-align: center;
+        object-fit: contain;
+    }
+    &__description {
+        bottom: 69px;
+        align-items: flex-start;
+        position: absolute;
+        font-style: italic; 
+    }
+    &__title,
+    &__text {
+        padding: 13px 20px;
+    }
+    &__title {
+        color:$black;
+        @include font (22px, 22px);
+        background: $white;
+    }
+    &__text {
+        color: $white;
+        @include font (14px, 14px);
+        background: $black;
+    }
+}
+
+@media only all and (min-width: 481px) and (max-width: 769px) {
+    .baner {
+        height: 353px;
+        &__description {
+            bottom: 0px;
+            align-items: stretch;
+            width: 100%;
+        }
+        &__title, &__text {
+            padding: 14px 10px;
+        }
+        &__title {
+            opacity: 0.6;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            width: 100%;
+        }
+    }
+}
+
+@media only all and (max-width: 480px) {
+    .baner {
+        height: 373px;
+        &__description {
+            bottom: 0px;
+            width: 100%;
+        }
+        &__title {
+            opacity: 0.6;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+        &__title, &__text {
+            padding: 14px 10px;
+            width: 100%;
+        }
+        &__img {
+            object-fit: cover;
+        }
+    }
+
+}

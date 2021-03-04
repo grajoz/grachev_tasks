@@ -1,0 +1,9 @@
+@mixin flex ($direction) {
+    display: flex;
+    flex-direction: $direction;
+}
+
+@mixin font ($font-size, $line-height ) {
+    font-size: $font-size;
+    line-height: $line-height;
+}

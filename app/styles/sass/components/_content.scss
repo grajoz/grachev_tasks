@@ -1,3 +1,9 @@
+@import "variables/variables";
+@import "mixins/mixins";
+
+.wrapper {
+    max-width: 1300px;
+}
 
 @media only all and (min-width: 1177px) {
     .wrapper {
@@ -5,12 +11,10 @@
     }
     .content {
         @include flex (row);
-        overflow: hidden;
-        &__aside {
-            width: 140px;
-        }
-        &__main {
-            overflow: hidden;       
+        flex-shrink: 0;
+        justify-content: space-between;
+       &__aside {
+            min-width: 140px;
         }
         &-#{$margin}:first-child {
             #{$margin}-right: 44px;
@@ -24,14 +28,15 @@
     }
     .content {
         @include flex (row);
-        &__aside {
-            width: 140px;
+    }
+    .content__aside {
+            min-width: 140px;
         }
-        &-margin:first-child {
+        .content-margin:first-child {
             margin-right: 44px;
         }
     }
-}
+
 
 @media only all and (min-width: 769px) and (max-width: 992px) {
     .wrapper {

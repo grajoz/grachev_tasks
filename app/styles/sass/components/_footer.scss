@@ -1,11 +1,11 @@
 @import "variables/variables";
+@import "mixins/mixins";
 
 .footer {
-    font-size: 12px;
-    line-height: 12px;
+    @include font (12px, 12px);
     justify-content: space-between;
     align-items: center;
-    border-top: 2px solid $smokie-color;
+    border-top: 2px solid $smokie;
     
     &__use-box a {
         color:$link-color;
@@ -13,7 +13,7 @@
     
     &__use::after {
         content: " | ";
-        color:$smokie-color;
+        color:$smokie;
         white-space: pre;
     }
     
@@ -43,7 +43,7 @@
 }
 
 
-@each $icon in twitter, fb, rss {
+@each $icon in $social {
     .#{$icon}-icon {
         background-image: url('../../icon/#{$icon}-icon.svg');
     }
