@@ -1,6 +1,4 @@
 
-
-
 const arr1 = [1,2];
 const arr2 = [1];
 const arr3 = [1,2,2,2,3];
@@ -10,12 +8,13 @@ const arr6 = [1,2,32,3,2,6,8,3,9,5];
 
 const str = "The sunset sets at twelve o' clock.";
 
+const num1 = 9119;
+const num2 = 323;
+const num3 = 101;
+
 let arrayDiff = (function () {
-    function arrayDiffPrivat (firstArr, secondArr) {
+    function _arrayDiff (firstArr, secondArr) {
         let resultArr = [];
-    
-        if (!Array.isArray(firstArr)) {firstArr = []};
-        if (!Array.isArray(secondArr)) {secondArr = []};
 
         let secondArrLength = secondArr.length;
         for (let i=0; i<secondArrLength; i++) { 
@@ -36,7 +35,7 @@ let arrayDiff = (function () {
         return resultArr;
     }
 
-    return  arrayDiffPrivat;
+    return  _arrayDiff;
 })();
 
 console.log(arrayDiff([1,2],[1]));
@@ -67,3 +66,17 @@ let replaceAlphabetPosition = (() =>{
 })();
 
 console.log(replaceAlphabetPosition(str))
+
+let squareEveryDigit = (() => {
+        function _squareEveryDigit (num) {
+            return num.toString()
+                      .split('')
+                      .map(elem => (+ elem) ** 2)
+                      .join('') - 0;
+        }
+    return _squareEveryDigit;
+})();
+
+console.log(squareEveryDigit(num1));
+console.log(squareEveryDigit(num2));
+console.log(squareEveryDigit(num3))
